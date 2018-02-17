@@ -1,13 +1,16 @@
 body {
-   background: #EBF5FB;
+   background: #c2f7fa;
    font-family: serif;
    font-size: 20px;
 }
-
 h1 {
    font-family: sans-serif;
 }
-
 h3 {
    font-style: italic;
+}
+button {
+   color: white;
+   background: #4c5db4;
+   padding: 10px;
 }

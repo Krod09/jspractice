@@ -5,15 +5,43 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
    <link rel="stylesheet" href="./css/style.css">
-   <script src="./main.js" charset="utf-8"></script>
+
    <title>JavaScript Practice</title>
 </head>
-<body>
-   <h1 class="mainheading">I'm just going to leave this right here.....</h1>
-   <button type="button" name="info" href="www.kimberleerodriguez.com/" target="blank">Click for more info!</button>
-   <br>
-   <h3 class="subtitle">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."</h3>
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
+<body>
+
+<nav>
+     <ul>
+          <li><a class="navitem" id="page1" aria-controls="p1" aria-selected="true" href="#p1">Page 1</a></li>
+          <li><a class="navitem" id="page2" aria-controls="p2" href="#p2">Page 2</a></li>
+          <li><a class="navitem" id="page3"aria-controls="p3" href="#p3">Page 3</a></li>
+     </ul>
+</nav>
+
+   <h1 class="panel" id="p1" aria-hidden="false">I'm just going to leave this right here.....</h1>
+
+   <div class="panel" id="p2" aria-hidden="true">
+        <a href="https://www.kimberleerodriguez.com/" target="_blank" class="btn-md btn btn-link">Click this a href tag to view portfolio</a>
+   </div>
+
+      <br>
+      <div class="panel" id="p3" aria-hidden="true"><h3 class="subtitle">"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..."</h3>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+     </div>
+
+
+     <button class="btn" ><a href="https://www.google.com" target="_blank"> This is an ahref tag within a button</a></button>
+
+     <br><a href="https://www.google.com" target="_blank"><button class="btn" > This is a button within an ahref tag</button></a>
+
+     <br><button class="btn btn-link" href="https://www.google.com/">Button with class of btn-link</button>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+   <script src="main.js" charset="utf-8"></script>
 </body>
+
+
 </html>

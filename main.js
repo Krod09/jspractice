@@ -1,8 +1,8 @@
-.panel {
-     display: none;
-}
+var $panels = $('.panel');
 
-.navitem[aria-selected="true"]{
-     display: block;
-     background: orange;
-}
+var $buttons = $('.btn');
+
+$('#page1').click(function(){
+alert("You're a pretty cool kid.");
+
+});

@@ -10,7 +10,13 @@ h3 {
    font-style: italic;
 }
 button {
-   color: white;
-   background: #4c5db4;
    padding: 10px;
 }
+.panel {
+     display: none;
+}
+.panel[aria-hidden="false"]{
+     display: block;
+}
+.navitem[aria-selected="true"]{
+     background: orange;

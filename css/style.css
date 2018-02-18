@@ -1,7 +1,20 @@
 body {
-   background: #c2f7fa;
-   font-family: serif;
+   background: #20164e;
+   color: rgb(204, 193, 53);
    font-size: 20px;
+}
+a{
+     color:  rgb(209, 81, 215);
+}
+nav>ul{
+     display: flex;
+     list-style: none;
+}
+li {
+     margin: 20px;
+}
+button>a{
+     text-decoration: none;
 }
 h1 {
    font-family: sans-serif;

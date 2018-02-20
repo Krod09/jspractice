@@ -1,3 +1,4 @@
+/* TAGS */
 body {
    background: #20164e;
    color: rgb(204, 193, 53);
@@ -6,12 +7,23 @@ body {
 a{
      color:  rgb(209, 81, 215);
 }
+div {
+     margin: 50px;
+}
+nav{
+     height: 100px;
+     background: url("media/circuit.jpg");
+     background-size: cover;
+}
 nav>ul{
      display: flex;
      list-style: none;
 }
 li {
      margin: 20px;
+}
+button{
+     margin: 3px;
 }
 button>a{
      text-decoration: none;
@@ -25,6 +37,8 @@ h3 {
 button {
    padding: 10px;
 }
+
+/* CLASSES */
 .panel {
      display: none;
 }
@@ -32,4 +46,7 @@ button {
      display: block;
 }
 .navitem[aria-selected="true"]{
-     background: orange;
+     text-decoration: underline;
+     font-weight: bold;
+
+     /* MEDIA QUERIES */

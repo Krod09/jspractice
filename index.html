@@ -4,57 +4,60 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   <link rel="stylesheet" href="css/style.css">
 
    <title>JavaScript Practice</title>
 </head>
 
 <body>
 
-<nav>
-     <ul>
-          <li><a class="navitem" id="page1" aria-controls="p1" aria-selected="true" href="#p1">Page 1</a></li>
-          <li><a class="navitem" id="page2" aria-controls="p2" href="#p2">Page 2</a></li>
-          <li><a class="navitem" id="page3"aria-controls="p3" href="#p3">Page 3</a></li>
+<nav class="container-fluid">
+     <ul class="container" tab-index="0">
+          <li><a class="navitem" id="page1" aria-controls="p1" aria-selected="true" href="#">Page 1</a></li>
+          <li><a class="navitem" id="page2" aria-controls="p2">Page 2</a></li>
+          <li><a class="navitem" id="page3" aria-controls="p3">Page 3</a></li>
      </ul>
 </nav>
 
-   <h2 class="panel" id="p1" aria-hidden="false">Page 1 Panel</h2>
-   <p>Welcome to my JavaScript practice site. There's nothing exciting here, I promise. This is a place I can mess around and try new techniques before applying them to a functioning site.</p>
+<div class="panel" id="p1" aria-hidden="false">
+     <h2 id="p1_heading">Page 1 Panel</h2>
+     <p>Welcome to my JavaScript practice site. There's nothing exciting here, I promise. This is a place I can mess around and try new techniques before applying them to a functioning site.</p>
+</div>
 
-   <div class="panel" id="p2" aria-hidden="true">
-        <h2>Page 2 Panel</h2>
-        <a href="https://www.kimberleerodriguez.com/" target="_blank" class="btn-md btn btn-link">Click this a href tag to view portfolio</a>
-   </div>
+<div class="panel" id="p2" aria-hidden="true">
+     <h2>Page 2 Panel</h2>
+     <a href="https://www.kimberleerodriguez.com/" target="_blank" class="btn-md btn btn-link">Click this a href tag to view portfolio</a>
+</div>
 
-      <br>
-      <div class="panel" id="p3" aria-hidden="true">
-
+ <div class="panel" id="p3" aria-hidden="true">
      <h2 class="subtitle">Page 3 Panel</h2>
-
-   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
-     </div>
+     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+</div>
 
 <div id="signup">
      <h2>Sign-up for our weekly newsletter!</h2>
-     <form action="/subscription_successful.html">
-          Enter your email address: <input type="text" name="useremail" value=""><br>
-          <input type="submit" value="submit">
+     <form action="html/subscription_successful.html">
+          Enter your email address: <input type="email" name="useremail"> <input type="submit" value="submit">
      </form>
 </div>
 
 <div id="buttons">
      <h2>Buttons</h2>
+     <button id="random" class="btn">Click for random input and alert (no href)</button>
+     <button id="changebtn" class="btn change">Click here to change my text!</button>
      <button class="btn" ><a href="https://www.google.com" target="_blank"> Button (with an a href inside)</a></button>
 
-     <br><a href="https://www.google.com" target="_blank"><button class="btn" > a href (with a button inside)</button></a>
+     <a href="https://www.google.com" target="_blank"><button class="btn" > a href (with a button inside)</button></a>
 
-     <br><button class="btn btn-link" href="https://www.google.com/">Button with class of btn-link plus an href</button>
+     <button class="btn btn-link" href="https://www.google.com/">Button with class btn-link (doesn't work)</button>
 </div>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   <script src="main.js" charset="utf-8"></script>
-</body>
 
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="main.js" charset="utf-8"></script>
+</body>
 
 </html>

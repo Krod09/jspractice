@@ -1,14 +1,31 @@
 var $panels = $('.panel');
-var $tab1 = $('#page1');
-var $tab2 = $('#page2');
-var $tab3 = $('#page3');
+var $navitem = $('.navitem');
+var name;
+var $changebtn = document.getElementById('changebtn');
 
-$tab1.click(function(){
-var name = "whatever your name is...";
+// CHANGE BUTTON
+document.getElementById('changebtn').addEventListener('click', function(){
+     if($changebtn.classList.contains('change')){
+          $changebtn.classList.remove('change');
+          $changebtn.classList.add('changed');
+          $changebtn.innerHTML = "Yay you. Now change it back.";
+     }
+     else if ($changebtn.classList.contains('changed')){
+          $changebtn.classList.remove('changed');
+          $changebtn.classList.add('change');
+          $changebtn.innerHTML = "Click here to change my text!";
+     }
+});
+
+
+//INPUT / ALERT
+$('#random').click(function(name){
 name = prompt("What's your name, kid?");
 alert("You're a pretty cool kid, " +name);
 });
 
-$('#submitbtn').click(function(){
-     alert("Thanks for subscribing! Click the confirmation link in your inbox.");
+// NAVIGATION ITEMS
+$navitem.on('click', function(){
+     $navitem.find('[aria-selected="true"]').attr('aria-selected', false);
+
 });
